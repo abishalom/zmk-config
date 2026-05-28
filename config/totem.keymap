@@ -28,21 +28,7 @@
 };
 
 / {
-    combos {
-        compatible = "zmk,combos";
-
-        combo_esc {
-            timeout-ms = <50>;
-            key-positions = <0 1>;
-            bindings = <&kp ESC>;
-        };
-
-        combo_tvp {
-            timeout-ms = <100>;
-            key-positions = <11 12 13>;
-            bindings = <&tog 0>;
-        };
-    };
+    combos { compatible = "zmk,combos"; };
 
     macros {
         gif: gif {
@@ -107,19 +93,19 @@
 
         Sym {
             bindings = <
-        &kp EXCLAMATION  &kp AT_SIGN  &kp HASH          &kp DOLLAR  &kp PERCENT    &kp CARET         &kp AMPERSAND    &kp ASTERISK       &kp GRAVE   &kp BACKSLASH
-        &trans           &trans       &trans            &trans      &trans         &kp C_PLAY_PAUSE  &kt C_VOLUME_UP  &kp C_VOLUME_DOWN  &kp C_MUTE  &trans
-&trans  &trans           &trans       &trans            &trans      &trans         &trans            &kp C_PREVIOUS   &kp C_NEXT         &trans      &trans         &trans
-                                      &mt LCTRL DELETE  &kp TAB     &kp SPACE      &kp ENTER         &trans           &kp MINUS
+       &kp EXCLAMATION  &kp AT_SIGN  &kp HASH          &kp DOLLAR  &kp PERCENT    &kp CARET         &kp AMPERSAND    &kp ASTERISK       &kp GRAVE   &kp BACKSLASH
+       &none            &none        &none             &none       &none          &kp C_PLAY_PAUSE  &kt C_VOLUME_UP  &kp C_VOLUME_DOWN  &kp C_MUTE  &none
+&none  &none            &none        &none             &none       &none          &none             &kp C_PREVIOUS   &kp C_NEXT         &none       &none          &none
+                                     &mt LCTRL DELETE  &kp TAB     &kp SPACE      &kp ENTER         &trans           &kp MINUS
             >;
         };
 
         Func {
             bindings = <
-        &trans  &trans        &trans        &trans        &to 4     &trans  &kp F9  &kp F10  &kp F11  &kp F12
-        &trans  &bt BT_SEL 0  &bt BT_SEL 1  &bt BT_SEL 2  &trans    &trans  &kp F5  &kp F6   &kp F7   &kp F8
-&trans  &trans  &bt BT_SEL 3  &bt BT_SEL 4  &trans        &trans    &trans  &kp F1  &kp F2   &kp F3   &kp F4   &trans
-                              &trans        &trans        &trans    &trans  &trans  &trans
+       &none  &none         &none         &none         &to 4    &none  &kp F9  &kp F10  &kp F11  &kp F12
+       &none  &bt BT_SEL 0  &bt BT_SEL 1  &bt BT_SEL 2  &none    &none  &kp F5  &kp F6   &kp F7   &kp F8
+&none  &none  &bt BT_SEL 3  &bt BT_SEL 4  &none         &none    &none  &kp F1  &kp F2   &kp F3   &kp F4   &none
+                            &none         &none         &none    &none  &none   &none
             >;
         };
 
