@@ -82,10 +82,10 @@
             //                                     ┗━━━━━━━━━━━┻━━━━━━━━━━━┻━━━━━━━━━━━┛   ┗━━━━━━━━━━━┻━━━━━━━━━━━┻━━━━━━━━━━━┛
 
             bindings = <
-                    &kp Q  &kp W       &kp E             &kp R        &kp T        &kp Y    &kp U            &kp I              &kp O       &kp P
-                    &kp A  &mt LALT S  &mt LEFT_SHIFT D  &mt LCTRL F  &kp G        &kp H    &mt RCTRL J      &mt RIGHT_SHIFT K  &mt RALT L  &mt RGUI SEMI
-&mt ESC LEFT_SHIFT  &kp Z  &kp X       &kp C             &kp V        &kp B        &kp N    &kp M            &kp COMMA          &kp DOT     &kp FSLH       &kp SQT
-                                       &mt DEL LCTRL     &lt 1 TAB    &kp SPACE    &kp RET  &lt 2 BACKSPACE  &kp MINUS
+                       &kp Q           &kp W       &kp E             &kp R        &kp T        &kp Y    &kp U            &kp I              &kp O       &kp P
+                       &mt A LEFT_GUI  &mt LALT S  &mt LEFT_SHIFT D  &mt LCTRL F  &kp G        &kp H    &mt RCTRL J      &mt RIGHT_SHIFT K  &mt RALT L  &mt RGUI SEMI
+&mt ESC LS(LA(LCTRL))  &kp Z           &kp X       &kp C             &kp V        &kp B        &kp N    &kp M            &kp COMMA          &kp DOT     &kp FSLH       &mt SQT LS(LA(LC(LGUI)))
+                                                   &mt DEL LCTRL     &lt 1 TAB    &kp SPACE    &kp RET  &lt 2 BACKSPACE  &kp MINUS
             >;
         };
 
@@ -97,19 +97,19 @@
 
         Nav {
             bindings = <
-        &trans  &trans  &trans  &trans  &trans    &kp DEL     &kp PG_DN  &kp UP    &kp PG_UP  &trans
-        &trans  &trans  &trans  &trans  &trans    &kp INSERT  &kp LEFT   &kp DOWN  &kp RIGHT  &trans
-&trans  &trans  &trans  &trans  &trans  &trans    &trans      &kp HOME   &kp END   &trans     &trans  &trans
-                        &trans  &trans  &trans    &trans      &trans     &trans
+        &trans    &trans        &trans      &trans     &kt LEFT_PARENTHESIS    &kp RIGHT_PARENTHESIS  &kp PG_DN      &kp UP     &kp PG_UP   &trans
+        &kt LGUI  &kt LEFT_ALT  &kp LSHIFT  &kp LCTRL  &kt LEFT_BRACE          &kp RIGHT_BRACE        &kp LEFT       &kp DOWN   &kp RIGHT   &trans
+&trans  &trans    &trans        &trans      &trans     &kt LEFT_BRACKET        &kp RIGHT_BRACKET      &kp HOME       &kp END    &kp INSERT  &trans  &trans
+                                &kp DELETE  &kp TAB    &kt SPACE               &kp ENTER              &kp BACKSPACE  &kp MINUS
             >;
         };
 
         Num {
             bindings = <
-        &trans  &trans  &trans  &trans  &trans    &trans  &trans  &trans  &trans  &trans
-        &trans  &trans  &trans  &trans  &trans    &trans  &trans  &trans  &trans  &trans
-&trans  &trans  &trans  &trans  &trans  &trans    &trans  &trans  &trans  &trans  &trans  &trans
-                        &trans  &trans  &trans    &trans  &trans  &trans
+        &trans    &kp F7           &kp F8         &kp F9        &trans       &kp EQUAL  &kp N7         &kp N8     &kp N9  &kt BACKSLASH
+        &trans    &mt LEFT_ALT F4  &mt F5 LSHIFT  &mt F6 LCTRL  &trans       &kp PLUS   &kp N4         &kp N5     &kp N6  &kp ASTERISK
+&trans  &kp CAPS  &kp F1           &kp F2         &kp F3        &trans       &kp N0     &kp N1         &kp N2     &kp N3  &kp FSLH       &trans
+                                   &kp DELETE     &kp TAB       &kt SPACE    &kp RET    &kp BACKSPACE  &kp MINUS
             >;
         };
     };
