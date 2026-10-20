@@ -5,9 +5,7 @@ manifest:
     projects:
         - name: zmk
           remote: zmkfirmware
-          # Uses Zephyr v4.1.0+zmk-fixes with the split-central BLE lockup fix:
-          # https://github.com/zmkfirmware/zmk/issues/3480
-          revision: 4dd95d7840eb3d5a3f59bb29fbf1ab054715ef85
+          revision: main
           import: app/west.yml
     self:
         path: config
