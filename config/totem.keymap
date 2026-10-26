@@ -87,7 +87,7 @@
               &kp TAB            &kp PAGE_UP     &kp UP_ARROW  &kp PAGE_DOWN  &kp LEFT_PARENTHESIS    &kp RIGHT_PARENTHESIS  &kp N7                     &kp N8  &kp N9  &kp PLUS
               &kp LCTRL          &kp LEFT_ARROW  &kp DOWN      &kp RIGHT      &kp LEFT_BRACKET        &kp RIGHT_BRACKET      &kp N4                     &kp N5  &kp N6  &kp MINUS
 &kp CAPSLOCK  &kp LS(LA(LCTRL))  &kp HOME        &kp F2        &kp END        &kp LEFT_BRACE          &kp RIGHT_BRACE        &kp N1                     &kp N2  &kp N3  &kp EQUAL  &mt LS(LA(LC(LGUI))) SLASH
-                                                 &kp DELETE    &trans         &kt SPACE               &kp RET                &mt RIGHT_SHIFT BACKSPACE  &kp N0
+                                                 &kp DELETE    &trans         &kp SPACE               &kp RET                &mt RIGHT_SHIFT BACKSPACE  &kp N0
             >;
         };
 
